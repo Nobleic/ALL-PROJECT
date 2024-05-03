@@ -42,7 +42,7 @@ text-align: center;
 .progress{
     position: absolute;
     background-color: rgb(58, 58, 246);
-    width: 50%;
+    width: 0%;
     height: 4px;
     top: 50%;
     left: 0;
@@ -50,15 +50,42 @@ text-align: center;
     z-index: -1;
     transition:0.4s ease ;
 }
-.btns{
+.circle-bar{
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0 ;
+    transition: .4 ease;
+
+}
+.circle-bar.active{
+border-color: #035185;
+color: royalblue;
+}
+.btn :active{
+transform: scale(0.98);
+}
+.btn :focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: #999;
+}
+.btn{
+    background-color: #035185;
     color: #fff;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
   font-family: inherit;
   padding: 8px 30px;
-  margin: 5px;
+  margin: 10px;
   font-size: 14px;
-  display: flex;
-  justify-content: space-between;
+  
 }
